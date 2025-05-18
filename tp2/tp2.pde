@@ -8,6 +8,8 @@ PImage diapositiva5;
 PImage autor; 
 float xPos = 0;
 float yPos = 0;
+PFont miFuente; 
+PFont miFuente2; 
 
 
 
@@ -22,6 +24,8 @@ void setup() {
   diapositiva4 = loadImage("diapositiva4.jpg"); 
   diapositiva5 = loadImage("diapositiva5.jpg"); 
   autor = loadImage("autor.jpg"); 
+  miFuente = createFont("data/Miskan.ttf",48);
+  miFuente2 = createFont("data/BebasNeue-Regular.ttf",48);
 }
 
 void draw() {
@@ -33,9 +37,11 @@ void draw() {
     fill(0);
     rect(0,0,640,100);
     fill(255);
+    textFont( miFuente );
     float sizeText = map(contadorTiempo, 0, 300, 5, 50);
   textSize(sizeText);
     text("VIDEOPLACE",110,50);
+    textFont( miFuente2 );
     textSize(20);
     stroke(0);
     text("De Myron Krueger",110,150);
