@@ -1,5 +1,6 @@
 // TRABAJO PRACTICO 3
 // Joan Diaval Amalla - c3
+//https://youtu.be/fCWw3gfxNMA?si=GkKp1sr_rb8tfbsP
 
 int cont;
 int cant = 12;
