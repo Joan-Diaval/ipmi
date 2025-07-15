@@ -1,5 +1,6 @@
 color obtenerColorDiagonal(int i, int j) {
   int d = (i + j) % 6;
+//Por gusto personal deje el codigo asi, pero si se quiere ser mas acorde a la referencia, usando ''int d = (i - j + 6) % 6;'' se soluciona.
   return (d == 0 || d == 1 || d == 3) ? color(255, 0, 0) : color(255);
 }
 
